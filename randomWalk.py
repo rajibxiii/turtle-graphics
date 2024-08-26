@@ -46,3 +46,5 @@ for i in range (300):
 
     turtle_obj.forward(20)
     turtle_obj.setheading(angles[randint(0, 3)])
+
+screen_obj.exitonclick()
