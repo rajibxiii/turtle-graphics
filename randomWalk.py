@@ -16,11 +16,11 @@ colors = [
     "lime",
     "maroon",
 ]
-angles = [0, 90, 360]
+angles = [0, 90, 180, 270]
 
 for i in range (300):
     choiceDir = randint(0, 3)
-    choiceAngle = angles[randint(0, 2)]
+    choiceAngle = angles[randint(0, 3)]
     turtle_obj.color(colors[randint(0,6)])
     turtle_obj.speed(10)
     if choiceDir == 0:
