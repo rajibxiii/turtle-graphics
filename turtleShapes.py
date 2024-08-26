@@ -3,13 +3,7 @@ from random import randint
 
 turtle_obj = Turtle()
 screen_obj = Screen()
-turtle_obj.shape("circle")
-
-# for i in range (15):
-#     turtle_obj.forward(10)
-#     turtle_obj.penup()
-#     turtle_obj.forward(10)
-#     turtle_obj.pendown()
+turtle_obj.shape("triangle")
 
 colors = [
     "deep pink",
@@ -20,5 +14,12 @@ colors = [
     "lime",
     "maroon",
 ]
+
+for i in range (3, 11):
+    turtle_obj.color(colors[randint(0,6)])
+    angle = 360/i
+    for j in range (0, i):
+        turtle_obj.forward(100)
+        turtle_obj.right(angle)
 
 screen_obj.exitonclick()
