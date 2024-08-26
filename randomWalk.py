@@ -22,7 +22,7 @@ for i in range (300):
     choiceDir = randint(0, 3)
     choiceAngle = angles[randint(0, 3)]
     turtle_obj.color(colors[randint(0,6)])
-    turtle_obj.speed(10)
+    turtle_obj.speed("fastest")
     if choiceDir == 0:
         turtle_obj.forward(20)
     elif choiceDir == 1:
