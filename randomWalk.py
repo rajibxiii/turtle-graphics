@@ -19,17 +19,21 @@ colors = [
 angles = [0, 90, 180, 270]
 
 for i in range (300):
-    choiceDir = randint(0, 3)
+    # choiceDir = randint(0, 3)
     choiceAngle = angles[randint(0, 3)]
     turtle_obj.color(colors[randint(0,6)])
     turtle_obj.speed("fastest")
-    if choiceDir == 0:
-        turtle_obj.forward(20)
-    elif choiceDir == 1:
-        turtle_obj.right(choiceAngle)
-        turtle_obj.forward(20)
-    elif choiceDir == 2:
-        turtle_obj.left (choiceAngle)
-        turtle_obj.forward(20)
-    else:
-        turtle_obj.backward(20)
+    
+    # if choiceDir == 0:
+    #     turtle_obj.forward(20)
+    # elif choiceDir == 1:
+    #     turtle_obj.right(choiceAngle)
+    #     turtle_obj.forward(20)
+    # elif choiceDir == 2:
+    #     turtle_obj.left (choiceAngle)
+    #     turtle_obj.forward(20)
+    # else:
+    #     turtle_obj.backward(20)
+
+    turtle_obj.forward(20)
+    turtle_obj.setheading(angles[randint(0, 3)])
